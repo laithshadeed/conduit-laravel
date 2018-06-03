@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Relationship;
+use App\Relationships;
 use Illuminate\Http\Request;
 
-class RelationshipController extends Controller
+class RelationshipsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class RelationshipController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Relationship  $relationship
+     * @param  \App\Relationships  $relationships
      * @return \Illuminate\Http\Response
      */
-    public function show(Relationship $relationship)
+    public function show(Relationships $relationships)
     {
         //
     }
@@ -52,10 +52,10 @@ class RelationshipController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Relationship  $relationship
+     * @param  \App\Relationships  $relationships
      * @return \Illuminate\Http\Response
      */
-    public function edit(Relationship $relationship)
+    public function edit(Relationships $relationships)
     {
         //
     }
@@ -64,10 +64,10 @@ class RelationshipController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Relationship  $relationship
+     * @param  \App\Relationships  $relationships
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Relationship $relationship)
+    public function update(Request $request, Relationships $relationships)
     {
         //
     }
@@ -75,10 +75,10 @@ class RelationshipController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Relationship  $relationship
+     * @param  \App\Relationships  $relationships
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Relationship $relationship)
+    public function destroy(Relationships $relationships)
     {
         //
     }

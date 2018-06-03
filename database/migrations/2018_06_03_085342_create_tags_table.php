@@ -16,6 +16,12 @@ class CreateTagsTable extends Migration
         Schema::create('tags', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+
+            $table->string('name');
+            $table->integer('article_id');
+
+            // Indexes
+            $table->foreign('article_id')->references('id')->on('articles');
         });
     }
 
